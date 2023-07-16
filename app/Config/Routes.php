@@ -30,6 +30,13 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->group('karyawan', function($routes){
+    $routes->get('/', 'Karyawan::index');
+    $routes->add('create', 'Karyawan::create');
+    $routes->add('update/(:num)', 'Karyawan::update/$1');
+    $routes->get('delete/(:any)', 'Karyawan::delete/$1');
+});
+
 
 /*
  * --------------------------------------------------------------------

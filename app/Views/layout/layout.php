@@ -7,25 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Favicon icon -->
-    <link rel="icon" href="<?= base_url()?>/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="<?= base_url() ?>/assets/images/favicon.ico" type="image/x-icon">
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
     <!-- waves.css -->
-    <link rel="stylesheet" href="<?= base_url()?>/assets/pages/waves/css/waves.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/pages/waves/css/waves.min.css" type="text/css" media="all">
     <!-- Required Fremwork -->
-    <link rel="stylesheet" type="text/css" href="<?= base_url()?>/assets/css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/css/bootstrap/css/bootstrap.min.css">
     <!-- waves.css -->
-    <link rel="stylesheet" href="<?= base_url()?>/assets/pages/waves/css/waves.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="<?= base_url() ?>/assets/pages/waves/css/waves.min.css" type="text/css" media="all">
     <!-- themify icon -->
-    <link rel="stylesheet" type="text/css" href="<?= base_url()?>/assets/icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/icon/themify-icons/themify-icons.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" type="text/css" href="<?= base_url()?>/assets/icon/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/icon/font-awesome/css/font-awesome.min.css">
     <!-- scrollbar.css -->
-    <link rel="stylesheet" type="text/css" href="<?= base_url()?>/assets/css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/css/jquery.mCustomScrollbar.css">
     <!-- am chart export.css -->
     <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
     <!-- Style.css -->
-    <link rel="stylesheet" type="text/css" href="<?= base_url()?>/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/css/style.css">
 </head>
 
 <body>
@@ -50,7 +50,7 @@
                             </div>
                         </div>
                         <a href="index.html">
-                            <img class="img-fluid" src="<?= base_url()?>/assets/images/logo.png" alt="Theme-Logo" />
+                            <img class="img-fluid" src="<?= base_url() ?>/assets/images/logo.png" alt="Theme-Logo" />
                         </a>
                         <a class="mobile-options waves-effect waves-light">
                             <i class="ti-more"></i>
@@ -90,7 +90,7 @@
                                     </li>
                                     <li class="waves-effect waves-light">
                                         <div class="media">
-                                            <img class="d-flex align-self-center img-radius" src="<?= base_url()?>/assets/images/avatar-2.jpg" alt="Generic placeholder image">
+                                            <img class="d-flex align-self-center img-radius" src="<?= base_url() ?>/assets/images/avatar-2.jpg" alt="Generic placeholder image">
                                             <div class="media-body">
                                                 <h5 class="notification-user">John Doe</h5>
                                                 <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
@@ -100,7 +100,7 @@
                                     </li>
                                     <li class="waves-effect waves-light">
                                         <div class="media">
-                                            <img class="d-flex align-self-center img-radius" src="<?= base_url()?>/assets/images/avatar-4.jpg" alt="Generic placeholder image">
+                                            <img class="d-flex align-self-center img-radius" src="<?= base_url() ?>/assets/images/avatar-4.jpg" alt="Generic placeholder image">
                                             <div class="media-body">
                                                 <h5 class="notification-user">Joseph William</h5>
                                                 <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
@@ -110,7 +110,7 @@
                                     </li>
                                     <li class="waves-effect waves-light">
                                         <div class="media">
-                                            <img class="d-flex align-self-center img-radius" src="<?= base_url()?>/assets/images/avatar-3.jpg" alt="Generic placeholder image">
+                                            <img class="d-flex align-self-center img-radius" src="<?= base_url() ?>/assets/images/avatar-3.jpg" alt="Generic placeholder image">
                                             <div class="media-body">
                                                 <h5 class="notification-user">Sara Soudein</h5>
                                                 <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
@@ -122,7 +122,7 @@
                             </li>
                             <li class="user-profile header-notification">
                                 <a href="#!" class="waves-effect waves-light">
-                                    <img src="<?= base_url()?>/assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
+                                    <img src="<?= base_url() ?>/assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
                                     <span>John Doe</span>
                                     <i class="ti-angle-down"></i>
                                 </a>
@@ -166,215 +166,13 @@
                         <div class="pcoded-inner-navbar main-menu">
                             <div class="">
                                 <div class="main-menu-header">
-                                    <img class="img-80 img-radius" src="<?= base_url()?>/assets/images/avatar-4.jpg" alt="User-Profile-Image">
+                                    <img class="img-80 img-radius" src="<?= base_url() ?>/assets/images/avatar-4.jpg" alt="User-Profile-Image">
                                     <div class="user-details">
                                         <span id="more-details">John Doe<i class="fa fa-caret-down"></i></span>
                                     </div>
                                 </div>
-
-                               
                             </div>
-                            <div class="pcoded-navigation-label" data-i18n="nav.category.navigation">Layout</div>
-                            <ul class="pcoded-item pcoded-left-item">
-                                <li class="active">
-                                    <a href="index.html" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-home"></i><b>D</b></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.dash.main">Dashboard</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                                <li class="pcoded-hasmenu">
-                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.basic-components.main">Components</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                    <ul class="pcoded-submenu">
-                                        <li class=" ">
-                                            <a href="accordion.html" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Accordion</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class=" ">
-                                            <a href="breadcrumb.html" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Breadcrumbs</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class=" ">
-                                            <a href="button.html" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Button</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class=" ">
-                                            <a href="tabs.html" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Tabs</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class=" ">
-                                            <a href="color.html" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Color</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class=" ">
-                                            <a href="label-badge.html" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Label Badge</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class=" ">
-                                            <a href="tooltip.html" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Tooltip</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class=" ">
-                                            <a href="typography.html" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Typography</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class=" ">
-                                            <a href="notification.html" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Notification</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class=" ">
-                                            <a href="icon-themify.html" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Themify</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-
-                                    </ul>
-                                </li>
-                            </ul>
-                            <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Forms &amp; Tables</div>
-                            <ul class="pcoded-item pcoded-left-item">
-                                <li>
-                                    <a href="form-elements-component.html" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Form Components</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="bs-basic-table.html" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Basic Table</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-
-                            </ul>
-
-                            <div class="pcoded-navigation-label" data-i18n="nav.category.forms">Chart &amp; Maps</div>
-                            <ul class="pcoded-item pcoded-left-item">
-                                <li>
-                                    <a href="chart.html" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Chart</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="map-google.html" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.form-components.main">Maps</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                </li>
-                                <li class="pcoded-hasmenu">
-                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.basic-components.main">Pages</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                    <ul class="pcoded-submenu">
-                                        <li class=" ">
-                                            <a href="auth-normal-sign-in.html" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Login</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class=" ">
-                                            <a href="auth-sign-up.html" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Register</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class=" ">
-                                            <a href="sample-page.html" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Sample Page</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-
-                            <div class="pcoded-navigation-label" data-i18n="nav.category.other">Other</div>
-                            <ul class="pcoded-item pcoded-left-item">
-                                <li class="pcoded-hasmenu ">
-                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                        <span class="pcoded-micon"><i class="ti-direction-alt"></i><b>M</b></span>
-                                        <span class="pcoded-mtext" data-i18n="nav.menu-levels.main">Menu Levels</span>
-                                        <span class="pcoded-mcaret"></span>
-                                    </a>
-                                    <ul class="pcoded-submenu">
-                                        <li class="">
-                                            <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.menu-levels.menu-level-21">Menu Level 2.1</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-                                        <li class="pcoded-hasmenu ">
-                                            <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-direction-alt"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.menu-levels.menu-level-22.main">Menu Level 2.2</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                            <ul class="pcoded-submenu">
-                                                <li class="">
-                                                    <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                                        <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                        <span class="pcoded-mtext" data-i18n="nav.menu-levels.menu-level-22.menu-level-31">Menu Level 3.1</span>
-                                                        <span class="pcoded-mcaret"></span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="">
-                                            <a href="javascript:void(0)" class="waves-effect waves-dark">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.menu-levels.menu-level-23">Menu Level 2.3</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
-                                        </li>
-
-                                    </ul>
-                                </li>
-                            </ul>
+                            <?= $this->include('layout/menu') ?>
                         </div>
                     </nav>
                     <div class="pcoded-content">
@@ -384,8 +182,7 @@
                                 <div class="row align-items-center">
                                     <div class="col-md-8">
                                         <div class="page-header-title">
-                                            <h5 class="m-b-10">Dashboard</h5>
-                                            <p class="m-b-0">Welcome to Mega Able</p>
+                                            <h5 class="m-b-10"><i class="ti-home"></i> Dashboard</h5>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -408,7 +205,7 @@
                                     <!-- Page-body start -->
                                     <div class="page-body">
                                         <div class="row">
-                                            
+                                            <?= $this->renderSection('content') ?>
                                         </div>
                                     </div>
                                     <!-- Page-body end -->
@@ -431,31 +228,31 @@
             <ul class="iew-download">
                 <li>
                     <a href="http://www.google.com/chrome/">
-                        <img src="<?= base_url()?>/assets/images/browser/chrome.png" alt="Chrome">
+                        <img src="<?= base_url() ?>/assets/images/browser/chrome.png" alt="Chrome">
                         <div>Chrome</div>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.mozilla.org/en-US/firefox/new/">
-                        <img src="<?= base_url()?>/assets/images/browser/firefox.png" alt="Firefox">
+                        <img src="<?= base_url() ?>/assets/images/browser/firefox.png" alt="Firefox">
                         <div>Firefox</div>
                     </a>
                 </li>
                 <li>
                     <a href="http://www.opera.com">
-                        <img src="<?= base_url()?>/assets/images/browser/opera.png" alt="Opera">
+                        <img src="<?= base_url() ?>/assets/images/browser/opera.png" alt="Opera">
                         <div>Opera</div>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.apple.com/safari/">
-                        <img src="<?= base_url()?>/assets/images/browser/safari.png" alt="Safari">
+                        <img src="<?= base_url() ?>/assets/images/browser/safari.png" alt="Safari">
                         <div>Safari</div>
                     </a>
                 </li>
                 <li>
                     <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
-                        <img src="<?= base_url()?>/assets/images/browser/ie.png" alt="">
+                        <img src="<?= base_url() ?>/assets/images/browser/ie.png" alt="">
                         <div>IE (9 & above)</div>
                     </a>
                 </li>
@@ -467,35 +264,41 @@
     <!-- Warning Section Ends -->
 
     <!-- Required Jquery -->
-    <script type="text/javascript" src="<?= base_url()?>/assets/js/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="<?= base_url()?>/assets/js/jquery-ui/jquery-ui.min.js "></script>
-    <script type="text/javascript" src="<?= base_url()?>/assets/js/popper.js/popper.min.js"></script>
-    <script type="text/javascript" src="<?= base_url()?>/assets/js/bootstrap/js/bootstrap.min.js "></script>
-    <script type="text/javascript" src="<?= base_url()?>/assets/pages/widget/excanvas.js "></script>
+    <script type="text/javascript" src="<?= base_url() ?>/assets/js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="<?= base_url() ?>/assets/js/jquery-ui/jquery-ui.min.js "></script>
+    <script type="text/javascript" src="<?= base_url() ?>/assets/js/popper.js/popper.min.js"></script>
+    <script type="text/javascript" src="<?= base_url() ?>/assets/js/bootstrap/js/bootstrap.min.js "></script>
+    <script type="text/javascript" src="<?= base_url() ?>/assets/pages/widget/excanvas.js "></script>
     <!-- waves js -->
-    <script src="<?= base_url()?>/assets/pages/waves/js/waves.min.js"></script>
+    <script src="<?= base_url() ?>/assets/pages/waves/js/waves.min.js"></script>
     <!-- jquery slimscroll js -->
-    <script type="text/javascript" src="<?= base_url()?>/assets/js/jquery-slimscroll/jquery.slimscroll.js "></script>
+    <script type="text/javascript" src="<?= base_url() ?>/assets/js/jquery-slimscroll/jquery.slimscroll.js "></script>
     <!-- modernizr js -->
-    <script type="text/javascript" src="<?= base_url()?>/assets/js/modernizr/modernizr.js "></script>
+    <script type="text/javascript" src="<?= base_url() ?>/assets/js/modernizr/modernizr.js "></script>
     <!-- slimscroll js -->
-    <script type="text/javascript" src="<?= base_url()?>/assets/js/SmoothScroll.js"></script>
-    <script src="<?= base_url()?>/assets/js/jquery.mCustomScrollbar.concat.min.js "></script>
+    <script type="text/javascript" src="<?= base_url() ?>/assets/js/SmoothScroll.js"></script>
+    <script src="<?= base_url() ?>/assets/js/jquery.mCustomScrollbar.concat.min.js "></script>
     <!-- Chart js -->
-    <script type="text/javascript" src="<?= base_url()?>/assets/js/chart.js/Chart.js"></script>
+    <script type="text/javascript" src="<?= base_url() ?>/assets/js/chart.js/Chart.js"></script>
     <!-- amchart js -->
     <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
-    <script src="<?= base_url()?>/assets/pages/widget/amchart/gauge.js"></script>
-    <script src="<?= base_url()?>/assets/pages/widget/amchart/serial.js"></script>
-    <script src="<?= base_url()?>/assets/pages/widget/amchart/light.js"></script>
-    <script src="<?= base_url()?>/assets/pages/widget/amchart/pie.min.js"></script>
+    <script src="<?= base_url() ?>/assets/pages/widget/amchart/gauge.js"></script>
+    <script src="<?= base_url() ?>/assets/pages/widget/amchart/serial.js"></script>
+    <script src="<?= base_url() ?>/assets/pages/widget/amchart/light.js"></script>
+    <script src="<?= base_url() ?>/assets/pages/widget/amchart/pie.min.js"></script>
     <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
     <!-- menu js -->
-    <script src="<?= base_url()?>/assets/js/pcoded.min.js"></script>
-    <script src="<?= base_url()?>/assets/js/vertical-layout.min.js "></script>
+    <script src="<?= base_url() ?>/assets/js/pcoded.min.js"></script>
+    <script src="<?= base_url() ?>/assets/js/vertical-layout.min.js "></script>
     <!-- custom js -->
-    <script type="text/javascript" src="<?= base_url()?>/assets/pages/dashboard/custom-dashboard.js"></script>
-    <script type="text/javascript" src="<?= base_url()?>/assets/js/script.js "></script>
+    <script type="text/javascript" src="<?= base_url() ?>/assets/pages/dashboard/custom-dashboard.js"></script>
+    <script type="text/javascript" src="<?= base_url() ?>/assets/js/script.js "></script>
+    <script>
+        function confirmToDelete(el) {
+            $("#delete-button").attr("href", el.dataset.href);
+            $("#confirm-dialog").modal('show');
+        }
+    </script>
 </body>
 
 </html>
