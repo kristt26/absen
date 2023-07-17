@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" /> -->
 </head>
 
 <body>
@@ -264,7 +265,8 @@
     <!-- Warning Section Ends -->
 
     <!-- Required Jquery -->
-    <script type="text/javascript" src="<?= base_url() ?>/assets/js/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="<?= base_url() ?>/assets/js/jquery/jquery.min.js"></script> -->
     <script type="text/javascript" src="<?= base_url() ?>/assets/js/jquery-ui/jquery-ui.min.js "></script>
     <script type="text/javascript" src="<?= base_url() ?>/assets/js/popper.js/popper.min.js"></script>
     <script type="text/javascript" src="<?= base_url() ?>/assets/js/bootstrap/js/bootstrap.min.js "></script>
@@ -291,14 +293,20 @@
     <script src="<?= base_url() ?>/assets/js/pcoded.min.js"></script>
     <script src="<?= base_url() ?>/assets/js/vertical-layout.min.js "></script>
     <!-- custom js -->
-    <script type="text/javascript" src="<?= base_url() ?>/assets/pages/dashboard/custom-dashboard.js"></script>
+    <!-- <script type="text/javascript" src="<?= base_url() ?>/assets/pages/dashboard/custom-dashboard.js"></script> -->
     <script type="text/javascript" src="<?= base_url() ?>/assets/js/script.js "></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script>
         function confirmToDelete(el) {
             $("#delete-button").attr("href", el.dataset.href);
             $("#confirm-dialog").modal('show');
         }
+        $(function() {
+            $('#dates').daterangepicker();
+        });
     </script>
+
 </body>
 
 </html>

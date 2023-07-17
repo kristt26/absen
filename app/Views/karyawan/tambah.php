@@ -36,9 +36,9 @@
                             <label class="float-label ml-3">Tempat Lahir</label>
                         </div>
                         <div class="col-2">
-                            <input type="date" name="tanggal_lahir" class="form-control" required="" value="">
-                            <span class="form-bar"></span>
-                            <label class="float-label ml-3">Tanggal Lahir</label>
+                            <input type="text" name="tanggal_lahir" class="form-control" id="dates" required="" value="">
+                            <!-- <span class="form-bar"></span>
+                            <label class="float-label ml-3">Tanggal Lahir</label> -->
     
                         </div>
 

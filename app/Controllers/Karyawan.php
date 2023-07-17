@@ -30,7 +30,7 @@ class Karyawan extends BaseController
             $conn = \Config\Database::connect();
             try {
                 $conn->transBegin();
-                $user->insert(['username'=>$this->request->getPost('username'), 'password'=>password_hash($this->request->getPost('password'), PASSWORD_DEFAULT)]);
+                $user->insert(['username'=>$this->request->getPost('username'), 'password'=>password_hash('user123', PASSWORD_DEFAULT)]);
                 $user_id = $user->getInsertID();
                 $cek = $karyawan->insert([
                     "nama" => $this->request->getPost('nama'),
