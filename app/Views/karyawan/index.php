@@ -21,7 +21,7 @@
                             <th>Tanggal Lahir</th>
                             <th>Handphone</th>
                             <th>Alamat</th>
-                            <th>Username</th>
+                            <!-- <th>Username</th> -->
                             <th><i class="fa fa-cogs" aria-hidden="true"></i></th>
                         </tr>
                     </thead>
@@ -35,7 +35,6 @@
                                 <td><?= $karyawan->tanggal_lahir ?></td>
                                 <td><?= $karyawan->hp ?></td>
                                 <td><?= $karyawan->alamat ?></td>
-                                <td><?= $karyawan->username ?></td>
                                 <td>
                                     <a href="<?= base_url('karyawan/update/' . $karyawan->id) ?>" class="btn btn-sm btn-outline-secondary">Edit</a>
                                     <a href="#" data-href="<?= base_url('karyawan/delete/' . $karyawan->id) ?>" onclick="confirmToDelete(this)" class="btn btn-sm btn-outline-danger">Delete</a>

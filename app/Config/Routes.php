@@ -29,9 +29,10 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
-$routes->get('auth', 'Login::index');
-$routes->group('karyawan', function($routes){
+$routes->get('/', 'Home::index', ['filter'=>'auth']);
+$routes->add('auth', 'Login::index');
+$routes->get('logout', 'Login::logout');
+$routes->group('karyawan', ['filter'=>'auth'], function($routes){
     $routes->get('/', 'Karyawan::index');
     $routes->add('create', 'Karyawan::create');
     $routes->add('update/(:num)', 'Karyawan::update/$1');
@@ -44,6 +45,12 @@ $routes->group('absen', function($routes){
     $routes->add('create', 'Absen::create');
     $routes->add('update/(:num)', 'Absen::update/$1');
     $routes->get('delete/(:any)', 'Absen::delete/$1');
+});
+$routes->group('laporan', ['filter'=>'auth'], function($routes){
+    $routes->get('/', 'Laporan::index');
+    $routes->post('read', 'Laporan::read');
+    $routes->get('detail/(:any)/(:any)/(:num)', 'Laporan::detail/$1/$2/$3');
+    $routes->get('excel/(:any)/(:any)/(:num)', 'Laporan::excel/$1/$2/$3');
 });
 
 

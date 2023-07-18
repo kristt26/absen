@@ -36,9 +36,9 @@
                             <label class="float-label ml-3">Tempat Lahir</label>
                         </div>
                         <div class="col-2">
-                            <input type="text" name="tanggal_lahir" class="form-control" id="dates" required="" value="">
-                            <!-- <span class="form-bar"></span>
-                            <label class="float-label ml-3">Tanggal Lahir</label> -->
+                            <input type="text" name="tanggal_lahir" class="form-control" id="tanggal" required="">
+                            <span class="form-bar"></span>
+                            <label class="float-label ml-3">Tanggal Lahir</label>
     
                         </div>
 
@@ -55,11 +55,11 @@
                     <span class="form-bar"></span>
                     <label class="float-label">Text area Input</label>
                 </div>
-                <div class="form-group form-default">
+                <!-- <div class="form-group form-default">
                     <input type="text" name="username" class="form-control" required="">
                     <span class="form-bar"></span>
                     <label class="float-label">Username</label>
-                </div>
+                </div> -->
                 <div class="form-group form-default text-right">
                     <button type="submit" class="btn btn-info btn-sm">Simpan</button>
                 </div>

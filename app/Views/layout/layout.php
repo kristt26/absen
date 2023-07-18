@@ -27,6 +27,7 @@
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/assets/css/style.css">
     <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" /> -->
+    <link rel="stylesheet" type="text/css" media="all" href="<?= base_url() ?>/libs/daterange/daterangepicker.css" />
 </head>
 
 <body>
@@ -63,7 +64,7 @@
                             <li>
                                 <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a></div>
                             </li>
-                            <li class="header-search">
+                            <!-- <li class="header-search">
                                 <div class="main-search morphsearch-search">
                                     <div class="input-group">
                                         <span class="input-group-addon search-close"><i class="ti-close"></i></span>
@@ -71,7 +72,7 @@
                                         <span class="input-group-addon search-btn"><i class="ti-search"></i></span>
                                     </div>
                                 </div>
-                            </li>
+                            </li> -->
                             <li>
                                 <a href="#!" onclick="javascript:toggleFullScreen()" class="waves-effect waves-light">
                                     <i class="ti-fullscreen"></i>
@@ -79,77 +80,15 @@
                             </li>
                         </ul>
                         <ul class="nav-right">
-                            <li class="header-notification">
-                                <a href="#!" class="waves-effect waves-light">
-                                    <i class="ti-bell"></i>
-                                    <span class="badge bg-c-red"></span>
-                                </a>
-                                <ul class="show-notification">
-                                    <li>
-                                        <h6>Notifications</h6>
-                                        <label class="label label-danger">New</label>
-                                    </li>
-                                    <li class="waves-effect waves-light">
-                                        <div class="media">
-                                            <img class="d-flex align-self-center img-radius" src="<?= base_url() ?>/assets/images/avatar-2.jpg" alt="Generic placeholder image">
-                                            <div class="media-body">
-                                                <h5 class="notification-user">John Doe</h5>
-                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                                <span class="notification-time">30 minutes ago</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="waves-effect waves-light">
-                                        <div class="media">
-                                            <img class="d-flex align-self-center img-radius" src="<?= base_url() ?>/assets/images/avatar-4.jpg" alt="Generic placeholder image">
-                                            <div class="media-body">
-                                                <h5 class="notification-user">Joseph William</h5>
-                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                                <span class="notification-time">30 minutes ago</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="waves-effect waves-light">
-                                        <div class="media">
-                                            <img class="d-flex align-self-center img-radius" src="<?= base_url() ?>/assets/images/avatar-3.jpg" alt="Generic placeholder image">
-                                            <div class="media-body">
-                                                <h5 class="notification-user">Sara Soudein</h5>
-                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
-                                                <span class="notification-time">30 minutes ago</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
                             <li class="user-profile header-notification">
                                 <a href="#!" class="waves-effect waves-light">
-                                    <img src="<?= base_url() ?>/assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
-                                    <span>John Doe</span>
+                                    <!-- <img src="<?= base_url() ?>/assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image"> -->
+                                    <span><?= session()->get('nama')?></span>
                                     <i class="ti-angle-down"></i>
                                 </a>
                                 <ul class="show-notification profile-notification">
                                     <li class="waves-effect waves-light">
-                                        <a href="#!">
-                                            <i class="ti-settings"></i> Settings
-                                        </a>
-                                    </li>
-                                    <li class="waves-effect waves-light">
-                                        <a href="user-profile.html">
-                                            <i class="ti-user"></i> Profile
-                                        </a>
-                                    </li>
-                                    <li class="waves-effect waves-light">
-                                        <a href="email-inbox.html">
-                                            <i class="ti-email"></i> My Messages
-                                        </a>
-                                    </li>
-                                    <li class="waves-effect waves-light">
-                                        <a href="auth-lock-screen.html">
-                                            <i class="ti-lock"></i> Lock Screen
-                                        </a>
-                                    </li>
-                                    <li class="waves-effect waves-light">
-                                        <a href="auth-normal-sign-in.html">
+                                        <a href="<?= base_url('logout')?>">
                                             <i class="ti-layout-sidebar-left"></i> Logout
                                         </a>
                                     </li>
@@ -165,14 +104,14 @@
                     <nav class="pcoded-navbar">
                         <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
                         <div class="pcoded-inner-navbar main-menu">
-                            <div class="">
+                            <!-- <div class="">
                                 <div class="main-menu-header">
                                     <img class="img-80 img-radius" src="<?= base_url() ?>/assets/images/avatar-4.jpg" alt="User-Profile-Image">
                                     <div class="user-details">
                                         <span id="more-details">John Doe<i class="fa fa-caret-down"></i></span>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <?= $this->include('layout/menu') ?>
                         </div>
                     </nav>
@@ -183,7 +122,7 @@
                                 <div class="row align-items-center">
                                     <div class="col-md-8">
                                         <div class="page-header-title">
-                                            <h5 class="m-b-10"><i class="ti-home"></i> Dashboard</h5>
+                                            <h5 class="m-b-10"><i class="<?= $title=="Home" ? "ti-home" : ($title=="Daftar Karyawan" ? "ti-user": "ti-file") ?>"></i> <?= $title?></h5>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -278,7 +217,7 @@
     <!-- modernizr js -->
     <script type="text/javascript" src="<?= base_url() ?>/assets/js/modernizr/modernizr.js "></script>
     <!-- slimscroll js -->
-    <script type="text/javascript" src="<?= base_url() ?>/assets/js/SmoothScroll.js"></script>
+    <!-- <script type="text/javascript" src="<?= base_url() ?>/assets/js/SmoothScroll.js"></script> -->
     <script src="<?= base_url() ?>/assets/js/jquery.mCustomScrollbar.concat.min.js "></script>
     <!-- Chart js -->
     <script type="text/javascript" src="<?= base_url() ?>/assets/js/chart.js/Chart.js"></script>
@@ -296,15 +235,36 @@
     <!-- <script type="text/javascript" src="<?= base_url() ?>/assets/pages/dashboard/custom-dashboard.js"></script> -->
     <script type="text/javascript" src="<?= base_url() ?>/assets/js/script.js "></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script type="text/javascript" src="<?= base_url() ?>/libs/daterange/daterangepicker.js"></script>
+    <script type="text/javascript" src="<?= base_url() ?>/js/angular.min.js"></script>
+    <script type="text/javascript" src="<?= base_url() ?>/js/apps.js"></script>
+    <script type="text/javascript" src="<?= base_url() ?>/js/services.js"></script>
+    <script type="text/javascript" src="<?= base_url() ?>/js/helper.services.js"></script>
+    <script src="<?= base_url() ?>js/pesan.services.js"></script>
     <script>
         function confirmToDelete(el) {
             $("#delete-button").attr("href", el.dataset.href);
             $("#confirm-dialog").modal('show');
         }
-        $(function() {
-            $('#dates').daterangepicker();
-        });
+        $(document).ready(function() {
+            $('#tanggal').daterangepicker({
+                singleDatePicker: true,
+                showDropdowns: true,
+                minYear: 1901,
+                locale: {
+                    format: 'Y-MM-DD'
+                }
+            });
+        })
+        $(document).ready(function() {
+            $('#tanggalMulai').daterangepicker({
+                showDropdowns: true,
+                minYear: 1901,
+                locale: {
+                    format: 'Y-MM-DD',
+                }
+            });
+        })
     </script>
 
 </body>

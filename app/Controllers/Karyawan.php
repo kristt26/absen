@@ -13,7 +13,7 @@ class Karyawan extends BaseController
     {
         $karyawan = new KaryawanModel();
         $data['title'] = "Daftar Karyawan";
-        $data['data'] = $karyawan->select('karyawan.*, user.username')->join('user', 'user.id=karyawan.user_id', 'LEFT')->findAll();
+        $data['data'] = $karyawan->findAll();
         return view('karyawan/index', $data);
     }
     public function create()
@@ -26,12 +26,12 @@ class Karyawan extends BaseController
         // jika data valid, simpan ke database
         if($isDataValid){
             $karyawan = new KaryawanModel();
-            $user = new UserModel();
+            // $user = new UserModel();
             $conn = \Config\Database::connect();
             try {
                 $conn->transBegin();
-                $user->insert(['username'=>$this->request->getPost('username'), 'password'=>password_hash('user123', PASSWORD_DEFAULT)]);
-                $user_id = $user->getInsertID();
+                // $user->insert(['username'=>$this->request->getPost('username'), 'password'=>password_hash('user123', PASSWORD_DEFAULT)]);
+                // $user_id = $user->getInsertID();
                 $cek = $karyawan->insert([
                     "nama" => $this->request->getPost('nama'),
                     "gender" => $this->request->getPost('gender'),
@@ -39,7 +39,7 @@ class Karyawan extends BaseController
                     "Tanggal_lahir" => $this->request->getPost('tanggal_lahir'),
                     "hp" => $this->request->getPost('hp'),
                     "alamat" => $this->request->getPost('alamat'),
-                    "user_id" => $user_id,
+                    // "user_id" => $user_id,
                 ]);
                 if($conn->transStatus()){
                     $conn->transCommit();
@@ -56,7 +56,8 @@ class Karyawan extends BaseController
             
         }
         // tampilkan form create
-        return view('karyawan/tambah');
+        $data['title'] = "Tambah Karyawan";
+        return view('karyawan/tambah', $data);
     }
 
     public function update($id) {
@@ -82,6 +83,7 @@ class Karyawan extends BaseController
         }
 
         // tampilkan form edit
+        $data['title'] = "Ubah Karyawan";
         return view('karyawan/ubah', $data);
     }
 
